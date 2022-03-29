@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Ufndr</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="video_resume">Create a video resume or </string>
+    <string name="recruitment">recruitment video</string>
+    <string name="team">Find the perfect team or</string>
+    <string name="colleague">colleague</string>
+    <string name="dream_job">Find your dream job or find the </string>
+    <string name="candidate">perfect applicant</string>
+    <string name="next">Next</string>
+    <string name="ready">Ready to find the right people?</string>
+
+    <string name="welcome">Welcome!</string>
+    <string name="job_seeker">Job Seeker</string>
+    <string name="employer">Employer</string>
+
+    <string name="email">Email Address</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone number</string>
+    <string name="zip">Zip code</string>
+    <string name="address">Address</string>
+    <string name="company">Company</string>
+    <string name="website">Website</string>
+    <string name="industry">Industry</string>
+    <string name="con_password">Confirm password</string>
+    <string name="continue_btn">Continue</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+    <string name="signin">Sign In</string>
+    <string name="account">Dont have an account?</string>
+    <string name="agree">By creating an account, you agree to our</string>
+    <string name="terms">Terms of Service</string>
+    <string name="policy">Privacy Policy</string>
+    <string name="already_user">Already a user?</string>
+    <string name="add_profile">Add profile picture</string>
+    <string name="profile">Profile</string>
+    <string name="connections">Connections</string>
+    <string name="my_connections">My Connections</string>
+    <string name="notifications">Notifications</string>
+    <string name="fav">Favourite</string>
+
+    <string name="enter_email">Enter your email address to </string>
+    <string name="reset_pass">reset your password</string>
+    <string name="forgot_pass">Forgot password</string>
+    <string name="confirm">Confirm</string>
+
+    <string name="sent_code">We have sent a 4 digits verification code </string>
+    <string name="on_email">on your Email</string>
+    <string name="no_code">Didn’t receive the code?</string>
+    <string name="resend">Resend</string>
+    <string name="verification">Verification</string>
+    <string name="verify_con">Verify and continue</string>
+
+    <string name="create_new_pass">Create new password to login into </string>
+    <string name="your_acc">your account.</string>
+    <string name="new_password">New Password</string>
+    <string name="password_reset">Password reset successfully</string>
+    <string name="now_use">You can now use your new password </string>
+    <string name="to_login">to login.</string>
+
+    <string name="emp_status">Employment Status</string>
+    <string name="emp_details">Full Time, Permanent</string>
+    <string name="emp_skills">Skills</string>
+    <string name="skills_details">Adobe Illustrator, Adobe Photoshop, Adobe XD, Motion Animation, After Effect</string>
+    <string name="emp_exp">Experience</string>
+    <string name="exp_details">0 years</string>
+    <string name="emp_title">Current Job Title</string>
+    <string name="title_details">Graphic Designer</string>
+    <string name="send_req">Send Match Request</string>
+
+    <string name="emp_edu">Education</string>
+    <string name="edu_details">Graduate degree</string>
+    <string name="emp_certi">Certifications</string>
+    <string name="certi_details"> C.C.N.A Networking</string>
+    <string name="want_position">Position wanted</string>
+    <string name="position_details">UI/UX Graphic Designer</string>
+
+    <string name="match_req">You have a match request from Michael</string>
+</resources>

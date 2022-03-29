@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_connection"
+        android:title="Connection"
+        android:enabled="true"
+        android:icon="@drawable/nav_connection_state"/>
+
+    <item
+        android:id="@+id/nav_fav"
+        android:title="Favourite"
+        android:enabled="true"
+        android:icon="@drawable/nav_fav_select_deselect"/>
+    <item
+        android:id="@+id/nav_dash"
+        android:enabled="false"
+        android:title="TODO" />
+
+
+    <item
+        android:id="@+id/nav_chat"
+        android:title="Chat"
+        android:enabled="true"
+        android:icon="@drawable/nav_msg_status"/>
+    <item
+        android:id="@+id/nav_notify"
+        android:title="Chat"
+        android:enabled="true"
+        android:icon="@drawable/nav_notify_state"/>
+
+</menu>

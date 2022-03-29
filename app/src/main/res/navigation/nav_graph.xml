@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+    <include
+        app:graph="@navigation/nav_graph_dashboard"/>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.myapp.ufndr.ui.fragments.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            app:popUpTo="@id/nav_graph"
+            android:id="@+id/action_splashFragment_to_videoResumeFragment"
+            app:destination="@id/videoResumeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoResumeFragment"
+        android:name="com.myapp.ufndr.ui.viewpager.VideoResumeFragment"
+        android:label="fragment_video_resume"
+        tools:layout="@layout/fragment_video_resume" >
+        <action
+            android:id="@+id/action_videoResumeFragment_to_perfectTeamFragment"
+            app:destination="@id/perfectTeamFragment" />
+        <action
+            android:id="@+id/action_videoResumeFragment_to_signInAsFragment"
+            app:destination="@id/signInAsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfectTeamFragment"
+        android:name="com.myapp.ufndr.ui.viewpager.PerfectTeamFragment"
+        android:label="fragment_perfect_team"
+        tools:layout="@layout/fragment_perfect_team" >
+        <action
+            android:id="@+id/action_perfectTeamFragment_to_dreamJobFragment"
+            app:destination="@id/dreamJobFragment" />
+        <action
+            android:id="@+id/action_perfectTeamFragment_to_signInAsFragment"
+            app:destination="@id/signInAsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dreamJobFragment"
+        android:name="com.myapp.ufndr.ui.viewpager.DreamJobFragment"
+        android:label="fragment_dream_job"
+        tools:layout="@layout/fragment_dream_job" >
+        <action
+            android:id="@+id/action_dreamJobFragment_to_signInAsFragment"
+            app:destination="@id/signInAsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInAsFragment"
+        android:name="com.myapp.ufndr.ui.fragments.signuplogin.SignInAsFragment"
+        android:label="fragment_sign_in_as"
+        tools:layout="@layout/fragment_sign_in_as" >
+        <action
+            android:id="@+id/action_signInAsFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="com.myapp.ufndr.ui.fragments.signuplogin.LogInFragment"
+        android:label="fragment_log_in"
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/action_logInFragment_to_companySignUpFragment"
+            app:destination="@id/companySignUpFragment" />
+        <action
+            android:id="@+id/action_logInFragment_to_forgotFragment"
+            app:destination="@id/forgotFragment" />
+        <action
+            android:id="@+id/action_logInFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_logInFragment_to_nav_graph_dashboard"
+            app:destination="@id/nav_graph_dashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/companySignUpFragment"
+        android:name="com.myapp.ufndr.ui.fragments.signuplogin.CompanySignUpFragment"
+        android:label="fragment_company_sign_up"
+        tools:layout="@layout/fragment_company_sign_up" >
+        <action
+            android:id="@+id/action_companySignUpFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+        <action
+            android:id="@+id/action_companySignUpFragment_to_cameraGalleryFragment"
+            app:destination="@id/cameraGalleryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotFragment"
+        android:name="com.myapp.ufndr.ui.fragments.signuplogin.ForgotPasswordFragment"
+        android:label="fragment_forgot"
+        tools:layout="@layout/fragment_forgot_password" >
+        <action
+            android:id="@+id/action_forgotFragment_to_emailVerifyCodeFragment"
+            app:destination="@id/emailVerifyCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailVerifyCodeFragment"
+        android:name="com.myapp.ufndr.ui.fragments.signuplogin.EmailVerifyCodeFragment"
+        android:label="fragment_email_verify_code"
+        tools:layout="@layout/fragment_email_verify_code" >
+        <action
+            android:id="@+id/action_emailVerifyCodeFragment_to_newPasswordFragment"
+            app:destination="@id/newPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPasswordFragment"
+        android:name="com.myapp.ufndr.ui.fragments.signuplogin.NewPasswordFragment"
+        android:label="fragment_new_password"
+        tools:layout="@layout/fragment_new_password" >
+        <action
+            android:id="@+id/action_newPasswordFragment_to_resetPasswordSuccessFragment"
+            app:destination="@id/resetPasswordSuccessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetPasswordSuccessFragment"
+        android:name="com.myapp.ufndr.ui.fragments.signuplogin.ResetPasswordSuccessFragment"
+        android:label="fragment_reset_password_success"
+        tools:layout="@layout/fragment_reset_password_success" >
+        <action
+            android:id="@+id/action_resetPasswordSuccessFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.myapp.ufndr.ui.fragments.dashboard.DashboardFragment"
+        android:label="DashboardFragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/cameraGalleryFragment"
+        android:name="com.myapp.ufndr.ui.popup.CameraGalleryFragment"
+        android:label="CameraGalleryFragment" />
+
+
+</navigation>
+

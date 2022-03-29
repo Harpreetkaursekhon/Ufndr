@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/drawable-v24/like_white_120dp.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/drawable-v24/skip_white_120dp.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/drawable/bottom_round_corner.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/drawable/btn_bg_green.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/drawable/btn_bg_red.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/drawable/button_background.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/drawable/button_border.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/drawable/chat_round_corner.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/drawable/chat_round_corner_receive.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/drawable/chat_rounded_corner.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/drawable/chat_rounded_corner_send.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/drawable/gradation_black.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/drawable/ic_baseline_sms.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/drawable/icons_grey_border.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/drawable/layout_round_corner.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/drawable/nav_connection_state.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/drawable/nav_fav_select_deselect.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/drawable/nav_msg_status.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/drawable/nav_notify_state.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/drawable/overlay_black.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/drawable/round_bg.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/font/fontfamily.xml" value="0.19487179487179487" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/activity_main.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/activity_view_pager.xml" value="0.15364583333333334" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/card_swipe_drawable.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/chat_item_view.xml" value="0.22" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/favourite_item_view.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_accepted.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_camera_gallery.xml" value="0.22" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_chat.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_company_profile.xml" value="0.22" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_company_sign_up.xml" value="0.1771177117711771" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_connections.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_dashboard.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_dream_job.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_email_verify_code.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_favourite.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_forgot.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_home.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_home_swipe_profile.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_inner_chat.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_job_seeker_profile.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_log_in.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_new_password.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_notifications.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_perfect_team.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_reset_password_success.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_sent.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_sign_in_as.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_sign_up.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_splash.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/fragment_video_resume.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/notification_item_one.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/notification_item_two.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/stack_item.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/stack_item_view.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/type_message.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/layout/view_pager_item_view.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/menu/bottom_nav_menu.xml" value="0.16770833333333332" />
+        <entry key="..\:/Users/Public/Ufndr/app/src/main/res/menu/menu.xml" value="0.16770833333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

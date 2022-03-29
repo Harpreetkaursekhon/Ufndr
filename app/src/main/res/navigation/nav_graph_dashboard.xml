@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_dashboard"
+    app:startDestination="@id/homeFragment">
+
+        <fragment
+            android:id="@+id/homeFragment"
+            android:name="com.myapp.ufndr.ui.fragments.dashboard.HomeFragment"
+            android:label="HomeFragment"
+            tools:layout="@layout/fragment_home">
+                <action
+                    android:id="@+id/action_home_to_job_seeker_profile"
+                    app:destination="@id/jobSeekerProfileFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/nav_connection"
+            android:name="com.myapp.ufndr.ui.fragments.dashboard.ConnectionsFragment"
+            android:label="ConnectionsFragment"
+            tools:layout="@layout/fragment_connections"
+            >
+        </fragment>
+        <fragment
+            android:id="@+id/nav_fav"
+            android:name="com.myapp.ufndr.ui.fragments.dashboard.FavouriteFragment"
+            android:label="FavouriteFragment"
+            tools:layout="@layout/fragment_favourite">
+        </fragment>
+        <fragment
+            android:id="@+id/nav_chat"
+            android:name="com.myapp.ufndr.ui.fragments.dashboard.ChatFragment"
+            android:label="ChatFragment"
+            tools:layout="@layout/fragment_chat">
+                <action
+                    android:id="@+id/action_nav_chat_to_innerChatFragment"
+                    app:destination="@id/innerChatFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/nav_notify"
+            android:name="com.myapp.ufndr.ui.fragments.dashboard.NotificationsFragment"
+            android:label="NotificationsFragment"
+            tools:layout="@layout/fragment_notifications">
+        </fragment>
+        <fragment
+            android:id="@+id/innerChatFragment"
+            android:name="com.myapp.ufndr.ui.fragments.dashboard.InnerChatFragment"
+            android:label="InnerChatFragment" />
+        <fragment
+            android:id="@+id/jobSeekerProfileFragment"
+            android:name="com.myapp.ufndr.ui.fragments.JobSeekerProfileFragment"
+            android:label="JobSeekerProfileFragment" />
+
+
+</navigation>

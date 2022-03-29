@@ -1,0 +1,35 @@
+package com.myapp.ufndr.ui.fragments.dashboard
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.recyclerview.widget.GridLayoutManager
+import com.myapp.ufndr.R
+import com.myapp.ufndr.databinding.FragmentFavouriteBinding
+import com.myapp.ufndr.ui.adapter.FavouriteAdapter
+
+class FavouriteFragment : Fragment() {
+lateinit var binding: FragmentFavouriteBinding
+ var adapter= FavouriteAdapter()
+lateinit var layoutManager: GridLayoutManager
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?): View? {
+        // Inflate the layout for this fragment
+        binding= DataBindingUtil.inflate(inflater,R.layout.fragment_favourite, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        layoutManager= GridLayoutManager(context, 2,GridLayoutManager.VERTICAL, false)
+        binding.recycler.layoutManager=layoutManager
+        binding.recycler.adapter=adapter
+
+    }
+
+}

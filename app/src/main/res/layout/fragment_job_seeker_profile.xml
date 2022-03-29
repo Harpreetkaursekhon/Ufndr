@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragments.JobSeekerProfileFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp">
+
+                    <ImageView
+                        android:id="@+id/tv_header_title"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/icons_grey_border"
+                        android:padding="12dp"
+                        android:src="@mipmap/ic_back_arrow" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/poppins_extra_bold"
+                        android:text="@string/profile"
+                        android:textColor="@color/text_color_light"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/tv_header"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/icons_grey_border"
+                        android:gravity="center_horizontal"
+                        android:padding="12dp"
+                        android:src="@mipmap/ic_heart_icon" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_round_corner">
+
+                    <com.google.android.exoplayer2.ui.PlayerView
+                        android:id="@+id/playerView"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="match_parent"
+                        app:use_artwork="true"
+                        app:resize_mode="fill"
+                        android:focusable="true"
+                        android:keepScreenOn="true"
+                        app:use_controller="true"
+                        app:show_buffering="when_playing"
+                        android:visibility="visible"
+                        app:default_artwork="@mipmap/ic_video_pause_img"
+                        android:layout_height="300dp" />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins_extra_bold"
+                            android:text="@string/name"
+                            android:textColor="@color/black_opacity_80"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/tv_emp_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:text="@string/emp_status"
+                            android:textColor="@color/black_opacity_80"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_status_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:text="@string/emp_details"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_skills"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:text="@string/emp_skills"
+                            android:textColor="@color/black_opacity_80"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_skill_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:text="@string/skills_details"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_exp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:text="@string/emp_exp"
+                            android:textColor="@color/black_opacity_80"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_exp_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:text="@string/exp_details"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_job_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:text="@string/emp_title"
+                            android:textColor="@color/black_opacity_80"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_title_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:text="@string/title_details"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/tv_emp_edu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:text="@string/emp_edu"
+                            android:textColor="@color/black_opacity_80"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_edu_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:text="@string/edu_details"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_certification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:text="@string/emp_certi"
+                            android:textColor="@color/black_opacity_80"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_certification_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:text="@string/certi_details"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_want_position"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:text="@string/want_position"
+                            android:textColor="@color/black_opacity_80"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_position_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:text="@string/position_details"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/btn_company_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/tv_forgot_pass"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button_background"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="@string/send_req"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@null" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
