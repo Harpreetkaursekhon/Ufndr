@@ -13,108 +13,96 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
-    <TextView
-        android:textSize="12sp"
-        android:textColor="@color/black_opacity_80"
-        android:fontFamily="@font/poppins_light"
-        android:layout_width="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="10dp"
-        android:layout_weight="1"
-        android:gravity="right"
-        android:layout_gravity="right"
-        android:layout_height="wrap_content"
-        android:text="11:20am"/>
-
-    <ImageView
-        android:id="@+id/iv_candidate_two"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="10dp"
-        android:src="@mipmap/ic_user_one"
-        android:scaleType="centerCrop" />
-
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="80dp"
-        android:weightSum="1"
-        android:orientation="vertical">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:orientation="horizontal">
-            <TextView
-                android:id="@+id/tv_name_two"
-                android:textSize="20sp"
-                android:textColor="@color/black_opacity_80"
-                android:fontFamily="@font/poppins_extra_bold"
-                android:layout_width="wrap_content"
-                android:layout_weight="1"
-                android:gravity="left"
-                android:layout_height="wrap_content"
-                android:text="Name"/>
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp">
 
-            <TextView
-                android:id="@+id/tv_online"
-                android:textSize="12sp"
-                android:textColor="@color/black_opacity_80"
-                android:fontFamily="@font/poppins_extra_light"
-                android:layout_width="wrap_content"
-                android:gravity="right"
-                android:layout_height="wrap_content"
-                android:text="Name"/>
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_candidate_two"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_user_one"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
-            android:id="@+id/tv_msg_two"
+            android:id="@+id/tv_time"
             android:textSize="12sp"
             android:textColor="@color/black_opacity_80"
             android:fontFamily="@font/poppins_light"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
             android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/iv_candidate_two"
+            android:text="11:20am"/>
+
+        <TextView
+            android:id="@+id/tv_name_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_extra_bold"
             android:gravity="left"
-            android:text="@string/match_req"/>
-        <LinearLayout
-            android:layout_width="match_parent"
+            android:text="Name"
+            android:textColor="@color/black_opacity_80"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toRightOf="@id/iv_candidate_two"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_msg_two"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black_opacity_80"
+            android:fontFamily="@font/poppins_light"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:orientation="horizontal">
-            <Button
-                android:id="@+id/btn_accept"
-                android:layout_width="wrap_content"
-                android:layout_height="35dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="10dp"
-                android:textSize="10sp"
-                android:textAllCaps="false"
-                android:layout_weight="1"
-                android:text="Accept"
-                android:fontFamily="@font/poppins_medium"
-                android:background="@drawable/btn_bg_green"
-                android:gravity="center"
-                android:textColor="@color/white"
-                app:backgroundTint="@null" />
-            <Button
+            app:layout_constraintLeft_toRightOf="@id/iv_candidate_two"
+            app:layout_constraintTop_toBottomOf="@id/tv_name_two"
+            android:text="@string/match_req"/>
+
+        <Button
+            android:id="@+id/btn_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_bg_green"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Accept"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:backgroundTint="@null"
+            app:layout_constraintTop_toBottomOf="@id/tv_msg_two"
+            app:layout_constraintLeft_toRightOf="@id/iv_candidate_two" />
+
+        <Button
                 android:id="@+id/btn_decline"
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="10dp"
                 android:textAllCaps="false"
-                android:layout_weight="1"
                 android:text="Decline"
                 android:textSize="10sp"
+                android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
                 android:fontFamily="@font/poppins_medium"
                 android:background="@drawable/btn_bg_red"
+                app:layout_constraintLeft_toRightOf="@id/btn_accept"
+                app:layout_constraintTop_toBottomOf="@id/tv_msg_two"
                 android:gravity="center"
                 android:textColor="@color/white"
                 app:backgroundTint="@null" />
-        </LinearLayout>
-    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>

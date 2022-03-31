@@ -37,6 +37,8 @@
     <string name="already_user">Already a user?</string>
     <string name="add_profile">Add profile picture</string>
     <string name="profile">Profile</string>
+    <string name="ed_profile">Edit Profile</string>
+
     <string name="connections">Connections</string>
     <string name="my_connections">My Connections</string>
     <string name="notifications">Notifications</string>
@@ -79,4 +81,7 @@
     <string name="position_details">UI/UX Graphic Designer</string>
 
     <string name="match_req">You have a match request from Michael</string>
+
+    <string name="facebook_app_id">517087416480220</string>
+    <string name="fb_login_protocol_scheme">fb517087416480220</string>
 </resources>

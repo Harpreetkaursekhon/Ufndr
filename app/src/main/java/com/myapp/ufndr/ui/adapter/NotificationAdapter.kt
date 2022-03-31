@@ -4,18 +4,14 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.myapp.ufndr.R
 import com.myapp.ufndr.model.DataModel
 
-class NotificationAdapter(private val list: ArrayList<DataModel>) :
+class NotificationAdapter(private val items: ArrayList<DataModel>) :
     RecyclerView.Adapter<NotificationAdapter.ViewHolder>() {
-    var items = listOf<DataModel>()
-        set(value) {
-            field = value
-            notifyDataSetChanged()
-        }
 
     sealed class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView.rootView) {
 
@@ -23,7 +19,7 @@ class NotificationAdapter(private val list: ArrayList<DataModel>) :
             fun bind(typeOne: DataModel.NotificationTypeOne) {
                 val name = itemView.findViewById<TextView>(R.id.tv_name)
                 val message = itemView.findViewById<TextView>(R.id.tv_msg)
-                val image = itemView.findViewById<TextView>(R.id.iv_candidate_one)
+                val image = itemView.findViewById<ImageView>(R.id.iv_candidate_one)
             }
         }
 
@@ -31,7 +27,7 @@ class NotificationAdapter(private val list: ArrayList<DataModel>) :
             fun bind(typeOne: DataModel.NotificationTypeTwo) {
                 val name = itemView.findViewById<TextView>(R.id.tv_name_two)
                 val message = itemView.findViewById<TextView>(R.id.tv_msg_two)
-                val image = itemView.findViewById<TextView>(R.id.iv_candidate_two)
+                val image = itemView.findViewById<ImageView>(R.id.iv_candidate_two)
             }
         }
     }
@@ -58,7 +54,6 @@ class NotificationAdapter(private val list: ArrayList<DataModel>) :
 
         }
     }
-
     override fun getItemCount(): Int = items.size
 
     override fun getItemViewType(position: Int): Int {

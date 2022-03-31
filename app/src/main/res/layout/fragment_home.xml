@@ -17,16 +17,15 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_margin="20dp">
+            android:layout_marginTop="20dp">
 
             <ImageView
-                android:id="@+id/tv_header_title"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
+                android:id="@+id/iv_profile_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
                 android:layout_alignParentLeft="true"
-                android:background="@drawable/icons_grey_border"
-                android:padding="12dp"
-                android:src="@mipmap/ic_back_arrow" />
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_profile_icon" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -37,24 +36,25 @@
                 android:text="@string/connections"
                 android:textColor="@color/text_color_light"
                 android:textSize="18sp" />
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:background="@drawable/icons_grey_border"
-                android:padding="12dp"
-                android:src="@mipmap/ic_back_arrow" />
-        </RelativeLayout>
 
+            <ImageView
+                android:id="@+id/iv_filter_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="center"
+                android:src="@mipmap/ic_filter_icon" />
+        </RelativeLayout>
 
         <com.yuyakaido.android.cardstackview.CardStackView
             android:id="@+id/stackview"
-            android:padding="8dp"
-            app:leftOverlay="@layout/overlay_left"
-            app:rightOverlay="@layout/overlay_right"
+            android:padding="15dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="70dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
+
     </LinearLayout>
+
 </layout>

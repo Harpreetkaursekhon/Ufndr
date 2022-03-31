@@ -1,4 +1,4 @@
-package com.myapp.ufndr.ui.fragments.signuplogin
+package com.myapp.ufndr.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,22 +8,22 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
 import com.myapp.ufndr.R
-import com.myapp.ufndr.databinding.FragmentResetPasswordSuccessBinding
+import com.myapp.ufndr.databinding.FragmentCompanyEditProfileBinding
 
-class ResetPasswordSuccessFragment : Fragment() {
-lateinit var binding: FragmentResetPasswordSuccessBinding
+class CompanyEditProfileFragment : Fragment() {
+lateinit var binding: FragmentCompanyEditProfileBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding= DataBindingUtil.inflate(inflater,R.layout.fragment_reset_password_success, container, false)
+        binding= DataBindingUtil.inflate(inflater,R.layout.fragment_company_edit_profile, container, false)
         return binding.root
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.btnLogin.setOnClickListener {
-            findNavController().navigate(R.id.action_resetPasswordSuccessFragment_to_logInFragment)
+        binding.btnSave.setOnClickListener {
+            findNavController().navigate(R.id.action_companyEditProfileFragment_to_companyProfileFragment)
         }
     }
+
 }

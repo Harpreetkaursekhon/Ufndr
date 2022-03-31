@@ -6,28 +6,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.LinearInterpolator
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.FragmentTransaction
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.NavigationUI
-import androidx.navigation.ui.setupWithNavController
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.myapp.ufndr.R
 import com.myapp.ufndr.databinding.FragmentDashboardBinding
-import com.myapp.ufndr.ui.adapter.CardStackAdapter
-import com.myapp.ufndr.ui.fragments.swipeviews.HomeSwipeProfileFragment
+
 import com.yuyakaido.android.cardstackview.*
-import java.lang.reflect.Array.newInstance
 
 class DashboardFragment : Fragment() {
     lateinit var binding: FragmentDashboardBinding
-    lateinit var fragment: HomeSwipeProfileFragment
 
     lateinit var navigationController: NavController
 

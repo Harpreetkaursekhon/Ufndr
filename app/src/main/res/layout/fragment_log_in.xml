@@ -26,6 +26,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:textColorHint="@color/black_opacity_80"
                 app:boxStrokeColor="@color/main_color"
                 app:boxStrokeWidth="1dp">
@@ -34,8 +36,6 @@
                     android:id="@+id/ed_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
                     android:fontFamily="@font/poppins_semi_bold"
                     android:hint="@string/email"
                     android:inputType="textEmailAddress"
@@ -50,6 +50,8 @@
                 android:layout_below="@id/tl_email_container"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:hint="@string/password"
                 android:textColorHint="@color/black_opacity_80"
                 app:boxStrokeColor="@color/main_color"
@@ -61,8 +63,6 @@
                     android:id="@+id/ed_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
                     android:fontFamily="@font/poppins_semi_bold"
                     android:inputType="textPassword"
                     android:maxLength="20"
@@ -81,6 +81,14 @@
                 android:text="@string/forgot_password"
                 android:textColor="@color/main_color" />
 
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/tv_forgot_pass"
+                android:layout_marginBottom="30dp" />
             <Button
                 android:id="@+id/btn_login"
                 android:layout_width="match_parent"

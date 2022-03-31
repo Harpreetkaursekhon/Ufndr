@@ -59,6 +59,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             app:boxStrokeWidth="1dp"
             android:hint="@string/name"
             android:textColorHint="@color/black_opacity_80"
@@ -67,8 +69,6 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
                 android:fontFamily="@font/poppins_semi_bold"
                 android:inputType="textPersonName"
                 android:singleLine="true" />
@@ -81,6 +81,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             app:boxStrokeWidth="1dp"
             android:hint="@string/company"
             android:textColorHint="@color/black_opacity_80"
@@ -89,8 +91,6 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
                 android:fontFamily="@font/poppins_semi_bold"
                 android:inputType="textPersonName"
                 android:singleLine="true" />
@@ -103,6 +103,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             app:boxStrokeWidth="1dp"
             android:hint="@string/email"
             android:textColorHint="@color/black_opacity_80"
@@ -111,8 +113,6 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
                 android:fontFamily="@font/poppins_semi_bold"
                 android:inputType="textEmailAddress"
                 android:singleLine="true" />
@@ -125,6 +125,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             app:boxStrokeWidth="1dp"
             android:hint="@string/phone"
             android:textColorHint="@color/black_opacity_80"
@@ -133,8 +135,6 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
                 android:fontFamily="@font/poppins_semi_bold"
                 android:inputType="phone"
                 android:singleLine="true" />
@@ -147,6 +147,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             app:boxStrokeWidth="1dp"
             android:hint="@string/zip"
             android:textColorHint="@color/black_opacity_80"
@@ -155,8 +157,6 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
                 android:fontFamily="@font/poppins_semi_bold"
                 android:inputType="number"
                 android:singleLine="true" />
@@ -169,6 +169,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             app:boxStrokeWidth="1dp"
             android:hint="@string/address"
             android:textColorHint="@color/black_opacity_80"
@@ -177,8 +179,6 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
                 android:fontFamily="@font/poppins_semi_bold"
                 android:inputType="textPostalAddress"
                 android:singleLine="true" />
@@ -191,6 +191,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             app:boxStrokeWidth="1dp"
             android:hint="@string/website"
             android:textColorHint="@color/black_opacity_80"
@@ -199,8 +201,6 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
                 android:fontFamily="@font/poppins_semi_bold"
                 android:inputType="textWebEmailAddress"
                 android:singleLine="true" />
@@ -213,6 +213,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             app:boxStrokeWidth="1dp"
             android:hint="@string/industry"
             android:textColorHint="@color/black_opacity_80"
@@ -221,8 +223,6 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
                 android:fontFamily="@font/poppins_semi_bold"
                 android:singleLine="true" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -235,6 +235,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             app:boxStrokeWidth="1dp"
             app:passwordToggleEnabled="true"
             android:hint="@string/password"
@@ -245,8 +247,6 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
                 android:drawableRight="@mipmap/password_eye_open"
                 android:fontFamily="@font/poppins_semi_bold"
                 android:inputType="textPassword"
@@ -261,6 +261,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             app:boxStrokeWidth="1dp"
             app:passwordToggleEnabled="true"
             android:hint="@string/con_password"
@@ -271,8 +273,6 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
                 android:fontFamily="@font/poppins_semi_bold"
                 android:inputType="textPassword"
                 android:drawableRight="@mipmap/icon_eye_close"

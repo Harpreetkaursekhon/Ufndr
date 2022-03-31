@@ -13,6 +13,12 @@
                 <action
                     android:id="@+id/action_home_to_job_seeker_profile"
                     app:destination="@id/jobSeekerProfileFragment" />
+                <action
+                    android:id="@+id/action_homeFragment_to_companyProfileFragment"
+                    app:destination="@id/companyProfileFragment" />
+                <action
+                    android:id="@+id/action_homeFragment_to_bottomSheetFragment"
+                    app:destination="@id/bottomSheetFragment" />
         </fragment>
         <fragment
             android:id="@+id/nav_connection"
@@ -50,6 +56,27 @@
             android:id="@+id/jobSeekerProfileFragment"
             android:name="com.myapp.ufndr.ui.fragments.JobSeekerProfileFragment"
             android:label="JobSeekerProfileFragment" />
+        <fragment
+            android:id="@+id/companyProfileFragment"
+            android:name="com.myapp.ufndr.ui.fragments.CompanyProfileFragment"
+            android:label="CompanyProfileFragment" >
+                <action
+                    android:id="@+id/action_companyProfileFragment_to_companyEditProfileFragment"
+                    app:destination="@id/companyEditProfileFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/companyEditProfileFragment"
+            android:name="com.myapp.ufndr.ui.fragments.CompanyEditProfileFragment"
+            android:label="CompanyEditProfileFragment" >
+                <action
+                    android:id="@+id/action_companyEditProfileFragment_to_companyProfileFragment"
+                    app:destination="@id/companyProfileFragment" />
+        </fragment>
+        <dialog
+            android:id="@+id/bottomSheetFragment"
+            android:name="com.myapp.ufndr.ui.dialog.BottomSheetFragment"
+            android:label="fragment_bottom_sheet"
+            tools:layout="@layout/fragment_bottom_sheet" />
 
 
 </navigation>

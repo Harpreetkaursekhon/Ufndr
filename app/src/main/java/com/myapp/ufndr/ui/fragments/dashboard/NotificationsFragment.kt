@@ -8,13 +8,14 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.myapp.ufndr.Constants
 import com.myapp.ufndr.R
 import com.myapp.ufndr.databinding.FragmentNotificationsBinding
 import com.myapp.ufndr.model.DataModel
 import com.myapp.ufndr.ui.adapter.NotificationAdapter
 
 class NotificationsFragment : Fragment() {
-     var adapter= NotificationAdapter(getItemsList())
+
      lateinit var binding: FragmentNotificationsBinding
     lateinit var layoutManager: LinearLayoutManager
 
@@ -29,12 +30,30 @@ class NotificationsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+//        val key = "ÄBC"
+//        val list  = if(key == Constants.UserType.EMPLOYER){
+//            fragmentManager
+//        } else {
+//            getEmployerItemsList()
+//        }
+        val adapter= NotificationAdapter(getEmployeeItemsList())
+
         layoutManager= LinearLayoutManager(context)
         binding.recycler.layoutManager=layoutManager
         binding.recycler.adapter=adapter
 
     }
-    private fun getItemsList(): ArrayList<DataModel> {
+    private fun getEmployeeItemsList(): ArrayList<DataModel> {
+        val list = ArrayList<DataModel>()
+        list.add(DataModel.NotificationTypeOne("Dishu", "how are you?", R.mipmap.ic_user_one))
+        list.add(DataModel.NotificationTypeOne("Dishu", "how are you?", R.mipmap.ic_user_two))
+        list.add(DataModel.NotificationTypeOne("Dishu", "how are you?", R.mipmap.ic_user_one))
+        list.add(DataModel.NotificationTypeTwo("Dishu", "how are you?", R.mipmap.ic_user_two))
+        list.add(DataModel.NotificationTypeTwo("Dishu", "how are you?", R.mipmap.ic_user_one))
+        list.add(DataModel.NotificationTypeTwo("Dishu", "how are you?", R.mipmap.ic_user_two))
+        return list
+    }
+    private fun getEmployerItemsList(): ArrayList<DataModel> {
         val list = ArrayList<DataModel>()
         list.add(DataModel.NotificationTypeOne("Dishu", "how are you?", R.mipmap.ic_user_one))
         list.add(DataModel.NotificationTypeOne("Dishu", "how are you?", R.mipmap.ic_user_two))

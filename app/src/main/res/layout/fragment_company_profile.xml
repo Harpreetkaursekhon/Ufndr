@@ -299,6 +299,44 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/tv_company_portfolio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins_extra_bold"
+                            android:text="Company Portfolio"
+                            android:textColor="@color/black_opacity_80"
+                            android:textSize="22sp" />
+
+                        <ImageView
+                            android:layout_width="170dp"
+                            android:layout_height="110dp"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins_extra_bold"
+                            android:src="@mipmap/ic_video_pause_img"
+                            android:text="@string/connections"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
                 <Button
                     android:id="@+id/btn_company_signup"
                     android:layout_width="match_parent"
@@ -307,11 +345,11 @@
                     android:layout_marginLeft="40dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginRight="30dp"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginBottom="60dp"
                     android:background="@drawable/button_background"
                     android:fontFamily="@font/poppins_medium"
                     android:gravity="center"
-                    android:text="@string/send_req"
+                    android:text="Edit Profile"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
                     app:backgroundTint="@null" />

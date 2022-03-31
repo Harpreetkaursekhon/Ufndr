@@ -52,13 +52,13 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     implementation "androidx.viewpager2:viewpager2:1.0.0"
     implementation 'me.relex:circleindicator:2.1.4'
+    //pin otp
+    implementation 'com.chaos.view:pinview:1.4.3'
     //swipe views
-   implementation 'com.chaos.view:pinview:1.4.3'
-   implementation "com.yuyakaido.android:card-stack-view:2.3.4"
-    implementation 'com.daprlabs.aaron:cardstack:0.3.1-beta0'
-
+    implementation "com.yuyakaido.android:card-stack-view:2.3.4"
+    //exo player for videos
     implementation 'com.google.android.exoplayer:exoplayer:2.15.0'
-
-
+    //fb integration
+    implementation 'com.facebook.android:facebook-android-sdk:5.15.3'
 
 }
