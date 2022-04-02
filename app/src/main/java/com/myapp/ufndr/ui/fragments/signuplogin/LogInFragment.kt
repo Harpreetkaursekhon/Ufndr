@@ -25,58 +25,15 @@ lateinit var callbackManager: CallbackManager
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        FacebookSdk.sdkInitialize(context)
-        AppEventsLogger.activateApp(context)
+//        FacebookSdk.sdkInitialize(context)
+//        AppEventsLogger.activateApp(context)
         binding= DataBindingUtil.inflate(inflater,R.layout.fragment_log_in, container, false)
         return binding.root
-        emailFocusListener()
-        passwordFocusListener()
+
     }
 
-    private fun emailFocusListener() {
-        binding.edEmail.setOnFocusChangeListener{_, focused->
-            if(!focused){
-                binding.tlEmailContainer.helperText= validEmail()
-            }
 
-        }
-    }
-    private fun validEmail(): String? {
-        val email= binding.edEmail.text.toString()
-        if (Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-            return "invalid email address"
-        }
-        return null
-    }
 
-    private fun passwordFocusListener() {
-        binding.edPassword.setOnFocusChangeListener{_, focused->
-            if(!focused){
-                binding.tlPasswordContainer.helperText= validPassword()
-            }
-
-        }
-    }
-
-    private fun validPassword(): String? {
-        val password= binding.edPassword.text.toString()
-        if (password.length < 8 && password.isNullOrEmpty()){
-            return "enter valid password"
-        }
-        if(!password.matches(".*[A-Z].*".toRegex())){
-        return "must contain 1 uppercase "
-        }
-        if(!password.matches(".*[a-z].*".toRegex())){
-            return "must contain 1 lowercase "
-        }
-        if(!password.matches(".*[#$%&._%-+].*".toRegex())){
-            return "must contain 1 special character "
-        }
-        if(!password.matches(".*[0-9].*".toRegex())){
-            return "must contain 1 number "
-        }
-        return null
-    }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         callbackManager.onActivityResult(requestCode, resultCode, data)
@@ -126,30 +83,16 @@ lateinit var callbackManager: CallbackManager
 
         binding.btnLogin.setOnClickListener {
             findNavController().navigate(R.id.action_logInFragment_to_dashboardFragment)
-     //   submitForm()
         }
         binding.tvClickToSignup.setOnClickListener {
-            findNavController().navigate(R.id.action_logInFragment_to_companySignUpFragment)
+            findNavController().navigate(R.id.action_logInFragment_to_candidateSignUpFragment)
         }
-        binding.tvForgotPass.setOnClickListener {
-            findNavController().navigate(R.id.action_logInFragment_to_forgotFragment)
+        binding.tvTermsService.setOnClickListener {
+            findNavController().navigate(R.id.action_logInFragment_to_servicesTermsFragment)
         }
-    }
-
-//    private fun submitForm() {
-//        binding.tlEmailContainer.helperText== validEmail()
-//        binding.tlPasswordContainer.helperText== validPassword()
-//
-//        val validEmail=binding.tlEmailContainer.helperText== null
-//        val validPassword=binding.tlPasswordContainer.helperText== null
-//
-//        if(validEmail && validPassword)
-//            resetForm()
-//    }
-
-    private fun resetForm() {
-        binding.edEmail.text=null
-        binding.edPassword.text=null
+        binding.tvPolicy.setOnClickListener {
+            findNavController().navigate(R.id.action_logInFragment_to_privacyPolicyFragment)
+        }
     }
 
 }

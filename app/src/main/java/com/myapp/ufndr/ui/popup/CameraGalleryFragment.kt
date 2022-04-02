@@ -26,8 +26,6 @@ import com.google.android.gms.cast.framework.media.ImagePicker
 class CameraGalleryFragment : Fragment() {
     lateinit var binding: FragmentCameraGalleryBinding
     private val REQUEST_PERMISSION = 100
-    private val REQUEST_IMAGE_CAPTURE = 1
-    private val REQUEST_PICK_IMAGE = 2
     private lateinit var resultLauncher: ActivityResultLauncher<Intent>
 
     override fun onCreateView(

@@ -84,4 +84,8 @@
 
     <string name="facebook_app_id">517087416480220</string>
     <string name="fb_login_protocol_scheme">fb517087416480220</string>
+
+    <string name="lorem">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</string>
 </resources>

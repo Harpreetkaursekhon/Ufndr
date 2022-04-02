@@ -24,10 +24,10 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
                 android:textColorHint="@color/black_opacity_80"
                 app:boxStrokeColor="@color/main_color"
                 app:boxStrokeWidth="1dp">
@@ -48,10 +48,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tl_email_container"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
                 android:hint="@string/password"
                 android:textColorHint="@color/black_opacity_80"
                 app:boxStrokeColor="@color/main_color"
@@ -83,12 +83,14 @@
 
             <com.facebook.login.widget.LoginButton
                 android:id="@+id/loginButton"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_below="@id/tv_forgot_pass"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="30dp"
-                android:layout_below="@id/tv_forgot_pass"
                 android:layout_marginBottom="30dp" />
+
             <Button
                 android:id="@+id/btn_login"
                 android:layout_width="match_parent"
@@ -230,6 +232,7 @@
                     android:textColor="@color/black_opacity_80" />
 
                 <TextView
+                    android:id="@+id/tv_policy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

@@ -53,7 +53,7 @@
             </LinearLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -61,6 +61,7 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:hint="@string/industry"
+                app:hintTextColor="@color/black_opacity_80"
                 android:textColorHint="@color/black_opacity_80"
                 app:boxStrokeColor="@color/main_color"
                 app:boxStrokeWidth="1dp">
@@ -76,7 +77,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -84,8 +85,8 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:hint="@string/industry"
-                android:textColorHint="@color/black_opacity_80"
-                app:boxStrokeColor="@color/main_color"
+                app:hintTextColor="@color/black_opacity_80"
+                android:textColorHint="@color/black_opacity_80"                app:boxStrokeColor="@color/main_color"
                 app:boxStrokeWidth="1dp">
 
                 <AutoCompleteTextView
@@ -98,7 +99,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -106,6 +107,7 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:hint="@string/industry"
+                app:hintTextColor="@color/black_opacity_80"
                 android:textColorHint="@color/black_opacity_80"
                 app:boxStrokeColor="@color/main_color"
                 app:boxStrokeWidth="1dp">

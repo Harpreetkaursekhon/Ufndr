@@ -74,6 +74,15 @@
         <action
             android:id="@+id/action_logInFragment_to_nav_graph_dashboard"
             app:destination="@id/nav_graph_dashboard" />
+        <action
+            android:id="@+id/action_logInFragment_to_candidateSignUpFragment"
+            app:destination="@id/candidateSignUpFragment2" />
+        <action
+            android:id="@+id/action_logInFragment_to_privacyPolicyFragment"
+            app:destination="@id/privacyPolicyFragment" />
+        <action
+            android:id="@+id/action_logInFragment_to_servicesTermsFragment"
+            app:destination="@id/servicesTermsFragment" />
     </fragment>
     <fragment
         android:id="@+id/companySignUpFragment"
@@ -132,6 +141,18 @@
         android:id="@+id/cameraGalleryFragment"
         android:name="com.myapp.ufndr.ui.popup.CameraGalleryFragment"
         android:label="CameraGalleryFragment" />
+    <fragment
+        android:id="@+id/candidateSignUpFragment2"
+        android:name="com.myapp.ufndr.ui.fragments.signuplogin.CandidateSignUpFragment"
+        android:label="CandidateSignUpFragment" />
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.myapp.ufndr.ui.fragments.signuplogin.PrivacyPolicyFragment"
+        android:label="PrivacyPolicyFragment" />
+    <fragment
+        android:id="@+id/servicesTermsFragment"
+        android:name="com.myapp.ufndr.ui.fragments.signuplogin.ServicesTermsFragment"
+        android:label="ServicesTermsFragment" />
 
 
 </navigation>

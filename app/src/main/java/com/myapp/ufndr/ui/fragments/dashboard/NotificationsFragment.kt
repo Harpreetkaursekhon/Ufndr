@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.myapp.ufndr.Constants
 import com.myapp.ufndr.R
 import com.myapp.ufndr.databinding.FragmentNotificationsBinding
 import com.myapp.ufndr.model.DataModel
