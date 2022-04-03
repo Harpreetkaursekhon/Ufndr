@@ -8,7 +8,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import com.facebook.*
 import com.facebook.appevents.AppEventsLogger
@@ -16,9 +18,12 @@ import com.facebook.login.LoginManager
 import com.facebook.login.LoginResult
 import com.myapp.ufndr.R
 import com.myapp.ufndr.databinding.FragmentLogInBinding
+import com.myapp.ufndr.ui.interfaces.LogInResultCallback
+import com.myapp.ufndr.viewmodel.LogInViewModel
+import com.myapp.ufndr.viewmodel.LoginViewModelFactory
 
 @Suppress("DEPRECATION")
-class LogInFragment : Fragment() {
+class LogInFragment : Fragment(), LogInResultCallback {
 lateinit var binding:FragmentLogInBinding
 lateinit var callbackManager: CallbackManager
     private val EMAIL = "email"
@@ -43,6 +48,9 @@ lateinit var callbackManager: CallbackManager
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.viewModel= ViewModelProviders.of(this,
+            LoginViewModelFactory(this)
+        ).get(LogInViewModel::class.java)
 
         binding.ivFb.setOnClickListener {
             binding.loginButton.setReadPermissions(listOf(EMAIL))
@@ -93,6 +101,14 @@ lateinit var callbackManager: CallbackManager
         binding.tvPolicy.setOnClickListener {
             findNavController().navigate(R.id.action_logInFragment_to_privacyPolicyFragment)
         }
+    }
+
+    override fun success(message: String) {
+        Toast.makeText(context,message, Toast.LENGTH_SHORT).show()
+    }
+
+    override fun error(message: String) {
+        Toast.makeText(context,message,Toast.LENGTH_SHORT).show()
     }
 
 }
