@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.myapp.ufndr.R
 import com.myapp.ufndr.databinding.FragmentChatBinding
@@ -13,7 +15,14 @@ import com.myapp.ufndr.ui.adapter.ChatAdapter
 
 class ChatFragment : Fragment() {
 lateinit var binding: FragmentChatBinding
-private var chatAdapter= ChatAdapter()
+private var chatAdapter= ChatAdapter {
+
+    parentFragment?.parentFragment?.let { fragment ->
+        if(fragment is DashboardFragment){
+            fragment.findNavigationController().navigate(R.id.actionDashboardToInnerChat)
+        }
+    }
+}
 lateinit var layoutManager:LinearLayoutManager
 
     override fun onCreateView(
@@ -24,7 +33,6 @@ lateinit var layoutManager:LinearLayoutManager
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         layoutManager= LinearLayoutManager(context)
         binding.recycler.layoutManager=layoutManager
         binding.recycler.adapter=chatAdapter

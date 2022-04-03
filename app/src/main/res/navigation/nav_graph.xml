@@ -136,6 +136,11 @@
         android:id="@+id/dashboardFragment"
         android:name="com.myapp.ufndr.ui.fragments.dashboard.DashboardFragment"
         android:label="DashboardFragment" >
+
+        <action
+            android:id="@+id/actionDashboardToInnerChat"
+            app:destination="@id/innerChatFragmentOne" />
+
     </fragment>
     <fragment
         android:id="@+id/cameraGalleryFragment"
@@ -153,6 +158,10 @@
         android:id="@+id/servicesTermsFragment"
         android:name="com.myapp.ufndr.ui.fragments.signuplogin.ServicesTermsFragment"
         android:label="ServicesTermsFragment" />
+    <fragment
+        android:id="@+id/innerChatFragmentOne"
+        android:name="com.myapp.ufndr.ui.fragments.dashboard.InnerChatFragment"
+        android:label="InnerChatFragment" />
 
 
 </navigation>

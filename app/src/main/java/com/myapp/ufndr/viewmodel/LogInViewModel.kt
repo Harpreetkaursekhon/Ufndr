@@ -41,15 +41,17 @@ class LogInViewModel(private val listener: LogInResultCallback): ViewModel(){
 
         }
 
-    fun onLoginClicked(v: View){
-        var logincode:Int = loginValidationModel.isDataValid()
-        if (logincode==0)
-            listener.error("Email must not be null")
-        else if (logincode==1)
-            listener.error("wrong email pattern")
-        else if (logincode==2)
-            listener.success("Password length must be greater than six")
-        else
-            listener.success("Login successful")
-    }
+//    fun onLoginClicked(v: View){
+//        var logincode:Int = loginValidationModel.isDataValid()
+//        if (logincode==0)
+//            listener.error("Email must not be null")
+//        else if (logincode==1)
+//            listener.error("wrong email pattern")
+//        else if (logincode==2)
+//            listener.success("Password length must be greater than six")
+//        else
+//            listener.success("Login successful")
+//    }
+
+
 }

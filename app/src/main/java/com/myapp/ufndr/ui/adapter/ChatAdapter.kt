@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.myapp.ufndr.R
 import com.myapp.ufndr.ui.fragments.dashboard.InnerChatFragment
 
-class ChatAdapter: RecyclerView.Adapter<ChatAdapter.ViewHolder>() {
+class ChatAdapter(val callback: (view: View) -> Unit): RecyclerView.Adapter<ChatAdapter.ViewHolder>() {
     private var name = arrayOf("John", "Lay", "Yanbo", "Louis", "Leo")
     private var msg = arrayOf("How are you?", "How's you going?", "How's you been?", "I message you to..", "I was thinking to have a chat ")
     private var imgcandidate= intArrayOf(R.mipmap.ic_user_one, R.mipmap.ic_user_two, R.mipmap.ic_user_one, R.mipmap.ic_user_two, R.mipmap.ic_user_one)
@@ -37,7 +37,7 @@ class ChatAdapter: RecyclerView.Adapter<ChatAdapter.ViewHolder>() {
         holder.online.text = tvtime[position]
         holder.msg.text = msg[position]
         holder.itemView.setOnClickListener{ view ->
-            view.findNavController().navigate(R.id.action_nav_chat_to_innerChatFragment)
+            callback.invoke(view)
         }
     }
 

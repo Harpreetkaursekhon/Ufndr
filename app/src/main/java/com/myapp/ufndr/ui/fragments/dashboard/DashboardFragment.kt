@@ -63,5 +63,7 @@ class DashboardFragment : Fragment() {
 
     }
 
+    fun findNavigationController() = findNavController()
+
 
 }
