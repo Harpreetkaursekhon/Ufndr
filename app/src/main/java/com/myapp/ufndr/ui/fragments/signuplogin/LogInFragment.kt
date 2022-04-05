@@ -92,10 +92,7 @@ lateinit var callbackManager: CallbackManager
 //                val email= account.email
 //                val proifle=account.photoUrl
 //            }
-        } catch (e: IllegalStateException){
-            Log.d("exception", e.message.toString())
-        }
-        catch (e:Exception){
+        }catch (e:Exception){
             Log.d("exception", e.message.toString())
         }
     }
@@ -137,22 +134,16 @@ lateinit var callbackManager: CallbackManager
             findNavController().navigate(R.id.action_logInFragment_to_privacyPolicyFragment)
         }
     }
-
     private fun signIn() {
         val intent= googleSignInClient.signInIntent
         startActivityForResult(intent, RC_SIGN_IN)
     }
-
-
     override fun success(message: String) {
         Toast.makeText(context,message, Toast.LENGTH_SHORT).show()
     }
-
     override fun error(message: String) {
         Toast.makeText(context,message,Toast.LENGTH_SHORT).show()
     }
-
     override fun onConnectionFailed(p0: ConnectionResult) {
     }
-
 }
